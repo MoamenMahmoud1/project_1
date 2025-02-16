@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %} 
+{% if name == 'Joe2'  %}
+
+    <p>Welcome21 color</p>
+{% elif name == 'Joe1' %}
+    <p>welcome</p>
+
+{% else %} 
+    <p>Not found </p>
+{% endif %}
+
+{% for x in name %}
+
+<p>{{x}}</p>
+  
+{% endfor %}
+<img src="{% static 'img/wallpapersden.com_77226-1920x1080.jpg' %}" alt="">
+
+{% comment %}
+  <h1>Here you can write comments and will not shown </h1>
+{% endcomment %}
+
+
+{% endblock content %}
